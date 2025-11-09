@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Heart, ArrowLeft, Loader2 } from "lucide-react";
-import ProductCard from "./ProductCard";
+import ProductCard from "./Productcard";
 
 export default function WishlistPage() {
     const [wishlistIds, setWishlistIds] = useState([]);

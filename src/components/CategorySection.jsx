@@ -1,5 +1,4 @@
 import React from "react";
-import ProductCard from "./ProductCard";
 import Section from "./Section";
 
 export default function CategorySection({ categories = [] }) {

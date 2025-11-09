@@ -1,5 +1,5 @@
 import React from "react";
-import ProductCard from "./ProductCard";
+import ProductCard from "./Productcard";
 
 export default function Section({ title, products = [] }) {
   if (!products?.length) return null;
