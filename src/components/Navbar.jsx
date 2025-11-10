@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Search, Heart } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   const [isVisible, setIsVisible] = useState(true);
@@ -104,8 +105,8 @@ export default function Navbar() {
             </div>
 
             {/* 🔹 Wishlist */}
-            <a
-              href="/wishlist"
+            <Link
+              to="/wishlist"
               className="relative shrink-0 group"
               title="Wishlist"
             >
@@ -117,7 +118,7 @@ export default function Navbar() {
                   {wishlistCount}
                 </span>
               )}
-            </a>
+            </Link>
           </div>
         </div>
       </header>

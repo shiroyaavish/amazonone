@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Heart, Star } from "lucide-react";
 import { Link, useNavigate } from "react-router-dom";
 
@@ -26,6 +26,11 @@ export default function ProductCard({ product }) {
     }
     window.dispatchEvent(new Event("wishlistUpdated"));
   };
+
+  useEffect(() => {
+    const likedItems = JSON.parse(localStorage.getItem("wishlist")) || [];
+    setIsLiked(likedItems.includes(product._id));
+  }, [isLiked])
 
 
   return (

@@ -259,9 +259,6 @@ export default function ProductDetailPage() {
                 <ShoppingCart className="w-4 h-4 text-white" />
                 <p className="text-white"> Buy Now</p>
               </a>
-              <button className="flex-1 bg-white border border-gray-300 text-gray-700 text-center py-3 rounded-lg font-medium hover:bg-gray-50 transition">
-                Add to Cart
-              </button>
             </div>
           </div>
         </div>
